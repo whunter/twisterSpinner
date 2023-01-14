@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister</title>
+    <style>
+      body {
+        font-size: 1rem;
+      }
+      .color {
+        display:inline-block;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid black;
+        vertical-align: bottom;
+      }
+      #moves {
+        display: block;
+        margin-top: 10px;
+        height: 100px;
+      }
+      .move {
+        display: inline-block;
+        height: 1.5rem;
+        width: auto;
+        margin-left: 15px;
+      }
+      .bodyPart {
+        margin-top: -5px;
+      }
+    </style>
+</head>
+<body>
+  <h1>Twister</h1>
+  <div id="buttons">
+    <span>
+        <button id="start" onclick="start()">Start</button>
+    </span>
+    <span>
+        <button id="stop" onclick="stop()">Stop</button>
+    </span>
+    <span>
+      <button id="reset" onclick="reset()">Reset</button>
+  </span>
+  </div>
+
+  <div id="moves"></div>
+
+  <script src="twister.js"></script>
+</body>
+</html>
